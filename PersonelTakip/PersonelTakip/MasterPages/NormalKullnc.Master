@@ -1,0 +1,64 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="NormalKullnc.master.cs" Inherits="PersonelTakip.MasterPages.NormalKullnc" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+        }
+        .auto-style2 {
+            text-align: center;
+            color: #000066;
+        }
+        .auto-style3 {
+            text-align: center;
+            font-weight: normal;
+            font-style: normal;
+        }
+        .auto-style5 {
+            color: #A0CFEC;
+        }
+        #form1 {
+            background-color: #A0CFEC;
+        }
+    </style>
+</head>
+    <body style="background-color: #A0CFEC">
+        <form id="form1" runat="server">
+            <div style="height: 150px; width: 820px; margin-left:300px; float:left; background-color: #3399FF;" >
+                <asp:Image ID="Image2" runat="server" Height="150px" ImageUrl="~/MasterPages/personel.PNG" Width="250px" />
+            </div>
+            <div style="height: 20px; width: 820px; margin-left:300px; float:left; background-color: #A0CFEC;" ></div>
+            <div style="height: 30px; width: 820px; margin-left:300px; float:left; background-color: #357EC7;" >
+                <table class="auto-style1">
+                    <tr>
+                        <td class="auto-style2"><a href="BilgileriGuncelle.aspx" >Bilgileri Güncelle</a></td>
+                        <td class="auto-style3"><a href="IzinTalepEt.aspx" >İzin Talep Et</a></td>
+                        <td class="auto-style3"><a href="IzinGecmisi.aspx" >İzin Geçmişi</a></td>
+                        <td class="auto-style3"><a href >Çıkış</a></td>
+                        
+                        
+                    </tr>
+                </table>
+            </div>
+            <div style="height: 20px; width: 820px; float:left; margin-left:300px; background-color: #A0CFEC;" ></div>
+            <div style="margin-left: 300px; width: 700px; height:300px;">
+
+
+                <div style="margin-left:0px; height:400px; width:820px; float:left; background-color: #357EC7;">
+
+                  <asp:ContentPlaceHolder  ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+            
+
+            </div>
+
+         </form>
+     </body>
+</html>

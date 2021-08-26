@@ -1,0 +1,45 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Login.master.cs" Inherits="PersonelTakip.MasterPages.Login" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+        }
+        .auto-style2 {
+            text-align: center;
+            color: #000066;
+        }
+        .auto-style3 {
+            text-align: center;
+            font-weight: normal;
+            font-style: normal;
+        }
+        .auto-style5 {
+            color: #A0CFEC;
+        }
+        #form1 {
+            background-color: #A0CFEC;
+        }
+    </style>
+</head>
+    <body style="background-color: #A0CFEC">
+        <form id="form1" runat="server">
+            <div style="height: 150px; width: 700px; margin-left:300px; float:left; background-color: #3399FF;" >
+                <asp:Image ID="Image2" runat="server" Height="150px" ImageUrl="~/MasterPages/personel.PNG" Width="250px" />
+            </div>
+            
+            <div style="margin-left: 300px; width: 700px; height:300px; background-color: #357EC7;">
+              
+                  <asp:ContentPlaceHolder  ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+            </div>
+
+         </form>
+     </body>
+</html>
